@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Lengkap - Koperasi NU Vibes</title>
+  <style>
+    @media print {
+      body { font-size: 11pt; }
+      .no-print { display: none; }
+      .page-break { page-break-before: always; }
+      h1 { font-size: 20pt; }
+      h2 { font-size: 16pt; page-break-before: always; }
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Times New Roman', serif;
+      line-height: 1.6;
+      color: #333;
+      background: white;
+      font-size: 12pt;
+    }
+    
+    .container {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 20mm;
+      background: white;
+    }
+    
+    .cover {
+      text-align: center;
+      padding: 50mm 0;
+    }
+    
+    .logo {
+      width: 80mm;
+      height: 80mm;
+      background: linear-gradient(135deg, #2d5016, #4a7c2c);
+      border-radius: 50%;
+      margin: 0 auto 20mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .logo-text {
+      color: #d4af37;
+      font-size: 48pt;
+      font-weight: bold;
+    }
+    
+    h1 {
+      color: #2d5016;
+      font-size: 24pt;
+      margin-bottom: 10mm;
+      border-bottom: 3pt solid #d4af37;
+      padding-bottom: 5mm;
+    }
+    
+    h2 {
+      color: #2d5016;
+      font-size: 18pt;
+      margin-top: 15mm;
+      margin-bottom: 5mm;
+      border-left: 5pt solid #d4af37;
+      padding-left: 5mm;
+    }
+    
+    h3 {
+      color: #4a7c2c;
+      font-size: 14pt;
+      margin-top: 10mm;
+      margin-bottom: 3mm;
+    }
+    
+    h4 {
+      color: #2d5016;
+      font-size: 12pt;
+      margin-top: 5mm;
+      margin-bottom: 2mm;
+      font-weight: bold;
+    }
+    
+    p { margin-bottom: 3mm; text-align: justify; }
+    
+    ul, ol { margin-left: 8mm; margin-bottom: 5mm; }
+    li { margin-bottom: 2mm; }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 5mm 0;
+      font-size: 10pt;
+    }
+    
+    th, td {
+      border: 1pt solid #ccc;
+      padding: 3mm;
+      text-align: left;
+    }
+    
+    th {
+      background: #f0f8ff;
+      font-weight: bold;
+      color: #2d5016;
+    }
+    
+    .code {
+      background: #f5f5f5;
+      border: 1pt solid #ddd;
+      padding: 3mm;
+      font-family: 'Courier New', monospace;
+      font-size: 10pt;
+      margin: 3mm 0;
+      border-radius: 2mm;
+    }
+    
+    .highlight {
+      background: #fff8dc;
+      border-left: 3pt solid #d4af37;
+      padding: 3mm;
+      margin: 3mm 0;
+    }
+    
+    .warning {
+      background: #ffe4e1;
+      border-left: 3pt solid #ff6b6b;
+      padding: 3mm;
+      margin: 3mm 0;
+    }
+    
+    .success {
+      background: #f0fff0;
+      border-left: 3pt solid #4a7c2c;
+      padding: 3mm;
+      margin: 3mm 0;
+    }
+    
+    .step {
+      background: #2d5016;
+      color: white;
+      border-radius: 50%;
+      width: 6mm;
+      height: 6mm;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 3mm;
+    }
+    
+    .toc {
+      background: #f8f9fa;
+      border: 1pt solid #ddd;
+      padding: 5mm;
+      margin: 10mm 0;
+    }
+    
+    .toc ul { list-style: none; margin-left: 0; }
+    .toc li { margin-bottom: 1mm; }
+    .toc a { color: #2d5016; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    
+    .footer {
+      text-align: center;
+      margin-top: 20mm;
+      padding-top: 5mm;
+      border-top: 1pt solid #ddd;
+      color: #666;
+      font-size: 10pt;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2d5016;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cover Page -->
+    <div class="cover">
+      <div class="logo">
+        <span class="logo-text">NU</span>
+      </div>
+      <h1 style="font-size: 32pt; border: none; padding: 0;">KOPERASI NU VIBES</h1>
+      <h2 style="font-size: 20pt; color: #666; margin: 0; border: none; padding: 0;">Sistem Manajemen Koperasi</h2>
+      <div style="margin-top: 30mm;">
+        <h3 style="font-size: 18pt; color: #2d5016; margin: 0;">PANDUAN LENGKAP</h3>
+        <p style="font-size: 14pt; margin-top: 5mm;">Tutorial Step-by-Step & Dokumentasi</p>
+      </div>
+      <div style="margin-top: 40mm;">
+        <p style="font-size: 12pt; color: #666;">Versi 1.0 - 2024</p>
+        <p style="font-size: 10pt; color: #999;">© 2024 Koperasi NU Vibes</p>
+      </div>
+    </div>
+    
+    <!-- Table of Contents -->
+    <div class="page-break">
+      <div class="toc">
+        <h3>DAFTAR ISI</h3>
+        <ul>
+          <li><a href="#pendahuluan">1. PENDAHULUAN</a></li>
+          <li><a href="#instalasi">2. INSTALASI & SETUP</a></li>
+          <li><a href="#login">3. LOGIN & KEAMANAN</a></li>
+          <li><a href="#beranda">4. DASHBOARD BERANDA</a></li>
+          <li><a href="#info-koperasi">5. INFORMASI KOPERASI</a></li>
+          <li><a href="#unit-usaha">6. MANAJEMEN UNIT USAHA</a></li>
+          <li><a href="#anggota">7. MANAJEMEN ANGGOTA</a></li>
+          <li><a href="#simpanan">8. TRANSAKSI SIMPANAN</a></li>
+          <li><a href="#keuangan">9. TRANSAKSI KEUANGAN</a></li>
+          <li><a href="#laporan">10. LAPORAN KEUANGAN</a></li>
+          <li><a href="#shu">11. SISA HASIL USAHA (SHU)</a></li>
+          <li><a href="#pengaturan">12. PENGATURAN SISTEM</a></li>
+          <li><a href="#troubleshooting">13. TROUBLESHOOTING</a></li>
+          <li><a href="#tips">14. TIPS & TRIK</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="page-break">
+      <h2 id="pendahuluan">1. PENDAHULUAN</h2>
+      
+      <h3>1.1 Tentang Koperasi NU Vibes</h3>
+      <p>Koperasi NU Vibes adalah sistem manajemen koperasi berbasis web yang dirancang untuk membantu pengelolaan koperasi secara modern, efisien, dan terintegrasi. Aplikasi ini menyediakan fitur lengkap mulai dari manajemen anggota, transaksi simpanan, keuangan, hingga perhitungan Sisa Hasil Usaha (SHU).</p>
+      
+      <h3>1.2 Fitur Utama</h3>
+      <ul>
+        <li><strong>Dashboard Interaktif</strong> - Statistik real-time dengan grafik Chart.js</li>
+        <li><strong>Manajemen Anggota</strong> - CRUD lengkap dengan foto dan import/export</li>
+        <li><strong>Transaksi Simpanan</strong> - 4 jenis simpanan dengan cetak struk</li>
+        <li><strong>Keuangan Terintegrasi</strong> - Penjualan, pengeluaran, dan laporan</li>
+        <li><strong>Perhitungan SHU Otomatis</strong> - Berdasarkan simpanan dan partisipasi</li>
+        <li><strong>Multi-level User</strong> - Admin, Pengurus, dan Kasir</li>
+        <li><strong>Responsive Design</strong> - Bisa diakses dari PC, tablet, dan smartphone</li>
+      </ul>
+      
+      <h3>1.3 Teknologi yang Digunakan</h3>
+      <table>
+        <tr>
+          <th>Komponen</th>
+          <th>Teknologi</th>
+          <th>Versi</th>
+        </tr>
+        <tr>
+          <td>Backend</td>
+          <td>Node.js + Express.js</td>
+          <td>v18+</td>
+        </tr>
+        <tr>
+          <td>Database</td>
+          <td>SQLite3</td>
+          <td>v5.1+</td>
+        </tr>
+        <tr>
+          <td>Frontend</td>
+          <td>HTML5, CSS3, JavaScript</td>
+          <td>ES6+</td>
+        </tr>
+        <tr>
+          <td>Charts</td>
+          <td>Chart.js</td>
+          <td>v4.4+</td>
+        </tr>
+        <tr>
+          <td>Icons</td>
+          <td>Feather Icons</td>
+          <td>Latest</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="instalasi">2. INSTALASI & SETUP</h2>
+      
+      <h3>2.1 Persyaratan Sistem</h3>
+      <table>
+        <tr>
+          <th>Komponen</th>
+          <th>Minimum</th>
+          <th>Rekomendasi</th>
+        </tr>
+        <tr>
+          <td>Operating System</td>
+          <td>Windows 10, macOS 10.14, Ubuntu 18.04</td>
+          <td>Windows 11, macOS 12+, Ubuntu 20.04+</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>4 GB</td>
+          <td>8 GB</td>
+        </tr>
+        <tr>
+          <td>Storage</td>
+          <td>1 GB</td>
+          <td>5 GB</td>
+        </tr>
+        <tr>
+          <td>Browser</td>
+          <td>Chrome 90+, Firefox 88+</td>
+          <td>Chrome Latest, Firefox Latest</td>
+        </tr>
+      </table>
+      
+      <h3>2.2 Instalasi Node.js</h3>
+      <p><span class="step">1</span><strong>Download Node.js</strong></p>
+      <ul>
+        <li>Kunjungi https://nodejs.org/</li>
+        <li>Download versi LTS (Long Term Support)</li>
+        <li>Pilih sesuai sistem operasi Anda</li>
+      </ul>
+      
+      <p><span class="step">2</span><strong>Install Node.js</strong></p>
+      <ul>
+        <li>Jalankan file installer yang sudah didownload</li>
+        <li>Ikuti wizard instalasi dengan pengaturan default</li>
+        <li>Pastikan opsi "Add to PATH" dicentang</li>
+      </ul>
+      
+      <p><span class="step">3</span><strong>Verifikasi Instalasi</strong></p>
+      <div class="code">node --version<br>npm --version</div>
+      
+      <h3>2.3 Setup Aplikasi</h3>
+      <p><span class="step">1</span><strong>Extract File Aplikasi</strong></p>
+      <ul>
+        <li>Extract file aplikasi ke folder yang mudah diakses</li>
+        <li>Contoh: C:\koperasi-nu-vibes\</li>
+      </ul>
+      
+      <p><span class="step">2</span><strong>Install Dependencies</strong></p>
+      <div class="code">cd koperasi-nu-vibes<br>npm install</div>
+      
+      <p><span class="step">3</span><strong>Jalankan Aplikasi</strong></p>
+      <div class="code">npm start<br><br># Atau double-click file start.bat (Windows)</div>
+      
+      <p><span class="step">4</span><strong>Akses Aplikasi</strong></p>
+      <ul>
+        <li>Buka browser</li>
+        <li>Akses: http://localhost:3000/login.html</li>
+      </ul>
+      
+      <div class="success">
+        <strong>Berhasil!</strong> Jika muncul halaman login, instalasi sudah berhasil.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="login">3. LOGIN & KEAMANAN</h2>
+      
+      <h3>3.1 Login Pertama Kali</h3>
+      <p><span class="step">1</span><strong>Kredensial Default</strong></p>
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td>admin</td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>admin123</td>
+        </tr>
+      </table>
+      
+      <p><span class="step">2</span><strong>Proses Login</strong></p>
+      <ul>
+        <li>Masukkan username dan password</li>
+        <li>Klik tombol "Login"</li>
+        <li>Sistem akan redirect ke dashboard</li>
+      </ul>
+      
+      <div class="warning">
+        <strong>PENTING!</strong> Segera ganti password default setelah login pertama untuk keamanan.
+      </div>
+      
+      <h3>3.2 Mengganti Password</h3>
+      <p><span class="step">1</span>Buka menu "Pengaturan"</p>
+      <p><span class="step">2</span>Klik tombol "Edit" pada user admin</p>
+      <p><span class="step">3</span>Masukkan password baru yang kuat</p>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      <p><span class="step">5</span>Logout dan login kembali dengan password baru</p>
+      
+      <h3>3.3 Multi-Level User</h3>
+      <table>
+        <tr>
+          <th>Role</th>
+          <th>Hak Akses</th>
+          <th>Menu yang Bisa Diakses</th>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Penuh</td>
+          <td>Semua menu dan fitur</td>
+        </tr>
+        <tr>
+          <td>Pengurus</td>
+          <td>Terbatas</td>
+          <td>Beranda, Anggota, Transaksi, Laporan, SHU</td>
+        </tr>
+        <tr>
+          <td>Kasir</td>
+          <td>Minimal</td>
+          <td>Beranda, Transaksi Simpanan, Transaksi Keuangan</td>
+        </tr>
+      </table>
+      
+      <h3>3.4 Keamanan Sistem</h3>
+      <ul>
+        <li><strong>Enkripsi Password</strong> - Menggunakan bcrypt</li>
+        <li><strong>JWT Token</strong> - Untuk autentikasi session</li>
+        <li><strong>Role-based Access</strong> - Pembatasan akses berdasarkan role</li>
+        <li><strong>Session Timeout</strong> - Otomatis logout setelah 24 jam</li>
+      </ul>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="beranda">4. DASHBOARD BERANDA</h2>
+      
+      <h3>4.1 Overview Dashboard</h3>
+      <p>Dashboard beranda menampilkan ringkasan statistik koperasi dalam bentuk kartu informasi dan grafik interaktif. Semua data ditampilkan secara real-time dan terintegrasi dengan menu lainnya.</p>
+      
+      <h3>4.2 Kartu Statistik</h3>
+      <table>
+        <tr>
+          <th>Kartu</th>
+          <th>Deskripsi</th>
+          <th>Sumber Data</th>
+        </tr>
+        <tr>
+          <td>Total Anggota</td>
+          <td>Jumlah anggota aktif</td>
+          <td>Tabel anggota (status aktif)</td>
+        </tr>
+        <tr>
+          <td>Total Simpanan</td>
+          <td>Pokok + Wajib + Khusus + Sukarela</td>
+          <td>Akumulasi semua jenis simpanan</td>
+        </tr>
+        <tr>
+          <td>Total Penjualan</td>
+          <td>Penjualan semua unit usaha</td>
+          <td>Tabel transaksi penjualan</td>
+        </tr>
+        <tr>
+          <td>Total Keuntungan</td>
+          <td>Keuntungan kotor</td>
+          <td>Penjualan - HPP</td>
+        </tr>
+        <tr>
+          <td>Total Pengeluaran</td>
+          <td>Biaya operasional</td>
+          <td>Tabel pengeluaran</td>
+        </tr>
+        <tr>
+          <td>Laba/Rugi</td>
+          <td>Keuntungan - Pengeluaran</td>
+          <td>Perhitungan otomatis</td>
+        </tr>
+      </table>
+      
+      <h3>4.3 Grafik Interaktif</h3>
+      <h4>Grafik Komposisi Simpanan (Doughnut Chart)</h4>
+      <ul>
+        <li>Menampilkan perbandingan 4 jenis simpanan</li>
+        <li>Warna berbeda untuk setiap jenis</li>
+        <li>Tooltip menampilkan nilai dan persentase</li>
+      </ul>
+      
+      <h4>Grafik Laba/Rugi Bulanan (Line Chart)</h4>
+      <ul>
+        <li>Trend laba/rugi selama 12 bulan</li>
+        <li>Garis hijau untuk profit, merah untuk loss</li>
+        <li>Interaktif dengan hover information</li>
+      </ul>
+      
+      <div class="highlight">
+        <strong>Tips:</strong> Dashboard akan otomatis refresh setiap kali ada transaksi baru. Gunakan dashboard untuk monitoring harian kinerja koperasi.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="info-koperasi">5. INFORMASI KOPERASI</h2>
+      
+      <h3>5.1 Data Koperasi</h3>
+      <p>Menu ini berisi informasi lengkap tentang koperasi yang akan ditampilkan di struk, laporan, dan dokumen resmi lainnya.</p>
+      
+      <h3>5.2 Field Informasi</h3>
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Deskripsi</th>
+          <th>Wajib</th>
+        </tr>
+        <tr>
+          <td>Nama Koperasi</td>
+          <td>Nama resmi koperasi</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td>Alamat lengkap koperasi</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>Nomor Telepon</td>
+          <td>Nomor telepon yang bisa dihubungi</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>Email resmi koperasi</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Nomor Induk Koperasi</td>
+          <td>NIK dari Kementerian</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Nomor Badan Hukum</td>
+          <td>Nomor pengesahan badan hukum</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Tanggal Berdiri</td>
+          <td>Tanggal pendirian koperasi</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Logo</td>
+          <td>Logo koperasi (JPG/PNG)</td>
+          <td>Tidak</td>
+        </tr>
+      </table>
+      
+      <h3>5.3 Cara Edit Informasi</h3>
+      <p><span class="step">1</span>Buka menu "Info Koperasi"</p>
+      <p><span class="step">2</span>Klik tombol "Edit Informasi"</p>
+      <p><span class="step">3</span>Isi semua field yang diperlukan</p>
+      <p><span class="step">4</span>Upload logo (opsional)</p>
+      <p><span class="step">5</span>Klik "Simpan"</p>
+      
+      <div class="success">
+        <strong>Penting:</strong> Data ini akan otomatis muncul di semua struk transaksi dan laporan yang dicetak.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="unit-usaha">6. MANAJEMEN UNIT USAHA</h2>
+      
+      <h3>6.1 Overview Unit Usaha</h3>
+      <p>Unit usaha adalah berbagai jenis bisnis yang dijalankan oleh koperasi. Setiap unit usaha memiliki pencatatan keuangan terpisah untuk memudahkan analisis profitabilitas.</p>
+      
+      <h3>6.2 Jenis Usaha</h3>
+      <table>
+        <tr>
+          <th>Jenis</th>
+          <th>Contoh</th>
+          <th>Karakteristik</th>
+        </tr>
+        <tr>
+          <td>Ritel</td>
+          <td>Toko sembako, minimarket</td>
+          <td>Penjualan barang ke konsumen</td>
+        </tr>
+        <tr>
+          <td>Kuliner</td>
+          <td>Warung makan, katering</td>
+          <td>Penjualan makanan dan minuman</td>
+        </tr>
+        <tr>
+          <td>Jasa</td>
+          <td>Fotocopy, laundry, bengkel</td>
+          <td>Penyediaan layanan</td>
+        </tr>
+      </table>
+      
+      <h3>6.3 Menambah Unit Usaha</h3>
+      <p><span class="step">1</span>Buka menu "Unit Usaha" → "Data Usaha"</p>
+      <p><span class="step">2</span>Klik tombol "+ Tambah Unit Usaha"</p>
+      <p><span class="step">3</span>Isi form dengan data berikut:</p>
+      <ul>
+        <li><strong>Nama Usaha</strong> - Nama unit usaha (wajib)</li>
+        <li><strong>Jenis Usaha</strong> - Pilih dari dropdown (wajib)</li>
+        <li><strong>Status</strong> - Aktif/Tidak Aktif (wajib)</li>
+        <li><strong>Tanggal Mulai</strong> - Tanggal operasional dimulai</li>
+        <li><strong>Modal Awal</strong> - Modal awal dalam Rupiah</li>
+        <li><strong>Deskripsi</strong> - Penjelasan singkat usaha</li>
+        <li><strong>Logo</strong> - Upload logo usaha (opsional)</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      
+      <h3>6.4 Aset & Inventaris</h3>
+      <p>Setiap unit usaha dapat memiliki aset dan inventaris yang tercatat dengan detail:</p>
+      
+      <h4>Field Aset:</h4>
+      <ul>
+        <li><strong>Nama Aset</strong> - Nama barang/aset</li>
+        <li><strong>Kategori</strong> - Properti, Elektronik, Furniture, Kendaraan, Peralatan, Lainnya</li>
+        <li><strong>Unit Usaha</strong> - Kepemilikan aset</li>
+        <li><strong>Nilai Perolehan</strong> - Harga beli awal</li>
+        <li><strong>Nilai Sekarang</strong> - Nilai saat ini (setelah depresiasi)</li>
+        <li><strong>Tanggal Perolehan</strong> - Tanggal pembelian</li>
+        <li><strong>Kondisi</strong> - Baik, Cukup, Rusak</li>
+      </ul>
+      
+      <div class="highlight">
+        <strong>Tips:</strong> Gunakan kategori "Properti" untuk tanah dan bangunan, "Elektronik" untuk peralatan elektronik, dan seterusnya untuk memudahkan pelaporan.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="anggota">7. MANAJEMEN ANGGOTA</h2>
+      
+      <h3>7.1 Data Anggota</h3>
+      <p>Manajemen anggota adalah inti dari sistem koperasi. Semua transaksi simpanan dan perhitungan SHU berdasarkan data anggota.</p>
+      
+      <h3>7.2 Menambah Anggota Baru</h3>
+      <p><span class="step">1</span>Buka menu "Manajemen Anggota" → "Data Anggota"</p>
+      <p><span class="step">2</span>Klik tombol "+ Tambah Anggota"</p>
+      <p><span class="step">3</span>Isi form dengan data lengkap:</p>
+      
+      <table>
+        <tr>
+          <th>Field</th>
+          <th>Deskripsi</th>
+          <th>Wajib</th>
+        </tr>
+        <tr>
+          <td>Nomor Anggota</td>
+          <td>Nomor unik anggota (contoh: A001)</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>Nama lengkap sesuai KTP</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>NIK</td>
+          <td>Nomor Induk Kependudukan</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Tempat/Tanggal Lahir</td>
+          <td>Kota dan tanggal lahir</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>Laki-laki / Perempuan</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td>Alamat lengkap tempat tinggal</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Nomor Telepon</td>
+          <td>Nomor HP yang aktif</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>Email aktif anggota</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Pekerjaan</td>
+          <td>Pekerjaan saat ini</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Foto</td>
+          <td>Upload foto anggota (JPG/PNG)</td>
+          <td>Tidak</td>
+        </tr>
+        <tr>
+          <td>Tanggal Bergabung</td>
+          <td>Tanggal menjadi anggota</td>
+          <td>Ya</td>
+        </tr>
+        <tr>
+          <td>Status</td>
+          <td>Aktif / Tidak Aktif</td>
+          <td>Ya</td>
+        </tr>
+      </table>
+      
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      
+      <h3>7.3 Import Data Anggota</h3>
+      <p>Untuk menambah banyak anggota sekaligus, gunakan fitur import Excel:</p>
+      
+      <p><span class="step">1</span>Download template Excel</p>
+      <p><span class="step">2</span>Isi data anggota sesuai format</p>
+      <p><span class="step">3</span>Klik tombol "Import Excel"</p>
+      <p><span class="step">4</span>Pilih file Excel yang sudah diisi</p>
+      <p><span class="step">5</span>Klik "Upload"</p>
+      
+      <div class="warning">
+        <strong>Perhatian:</strong> Pastikan format Excel sesuai template. Nomor anggota harus unik dan tidak boleh duplikat.
+      </div>
+      
+      <h3>7.4 Export Data Anggota</h3>
+      <p>Untuk backup atau analisis data, gunakan fitur export:</p>
+      <ul>
+        <li><strong>Export Excel</strong> - Format .xlsx untuk edit di Excel</li>
+        <li><strong>Export PDF</strong> - Format .pdf untuk cetak atau arsip</li>
+      </ul>
+      
+      <h3>7.5 Data Pengurus</h3>
+      <p>Pengurus adalah anggota yang memiliki jabatan struktural di koperasi.</p>
+      
+      <h4>Menambah Pengurus:</h4>
+      <p><span class="step">1</span>Buka menu "Manajemen Anggota" → "Data Pengurus"</p>
+      <p><span class="step">2</span>Klik "+ Tambah Pengurus"</p>
+      <p><span class="step">3</span>Pilih anggota dari dropdown</p>
+      <p><span class="step">4</span>Isi jabatan (contoh: Ketua, Sekretaris, Bendahara)</p>
+      <p><span class="step">5</span>Tentukan periode mulai dan selesai</p>
+      <p><span class="step">6</span>Set status: Aktif/Tidak Aktif</p>
+      <p><span class="step">7</span>Klik "Simpan"</p>
+      
+      <h3>7.6 Data Karyawan</h3>
+      <p>Karyawan adalah pegawai koperasi yang bukan anggota.</p>
+      
+      <h4>Field Karyawan:</h4>
+      <ul>
+        <li>Nomor Karyawan (unik)</li>
+        <li>Data pribadi lengkap (NIK, tempat/tanggal lahir, dll)</li>
+        <li>Jabatan dan unit usaha</li>
+        <li>Gaji pokok</li>
+        <li>Tanggal bergabung</li>
+        <li>Foto karyawan</li>
+        <li>Status: Aktif/Tidak Aktif</li>
+      </ul>
+      
+      <div class="highlight">
+        <strong>Perbedaan Anggota vs Karyawan:</strong><br>
+        <strong>Anggota</strong> - Pemilik koperasi, berhak atas SHU, wajib simpanan<br>
+        <strong>Karyawan</strong> - Pegawai koperasi, menerima gaji, tidak wajib simpanan
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="simpanan">8. TRANSAKSI SIMPANAN</h2>
+      
+      <h3>8.1 Jenis Simpanan</h3>
+      <p>Koperasi NU Vibes mendukung 4 jenis simpanan sesuai standar koperasi:</p>
+      
+      <table>
+        <tr>
+          <th>Jenis</th>
+          <th>Deskripsi</th>
+          <th>Karakteristik</th>
+        </tr>
+        <tr>
+          <td>Simpanan Pokok</td>
+          <td>Simpanan wajib saat pertama bergabung</td>
+          <td>Dibayar sekali, tidak bisa diambil selama masih anggota</td>
+        </tr>
+        <tr>
+          <td>Simpanan Wajib</td>
+          <td>Simpanan rutin setiap bulan</td>
+          <td>Jumlah tetap, tidak bisa diambil selama masih anggota</td>
+        </tr>
+        <tr>
+          <td>Simpanan Khusus</td>
+          <td>Simpanan sukarela dengan tujuan tertentu</td>
+          <td>Jumlah bebas, bisa diambil sewaktu-waktu</td>
+        </tr>
+        <tr>
+          <td>Simpanan Sukarela</td>
+          <td>Simpanan bebas tanpa kewajiban</td>
+          <td>Jumlah bebas, bisa diambil sewaktu-waktu</td>
+        </tr>
+      </table>
+      
+      <h3>8.2 Transaksi Setoran</h3>
+      <p><span class="step">1</span>Buka menu "Transaksi Simpanan" → "Setoran"</p>
+      <p><span class="step">2</span>Klik "+ Tambah Setoran"</p>
+      <p><span class="step">3</span>Isi form transaksi:</p>
+      <ul>
+        <li><strong>Anggota</strong> - Pilih dari dropdown (ketik nama untuk search)</li>
+        <li><strong>Jenis Simpanan</strong> - Pilih jenis simpanan</li>
+        <li><strong>Jumlah</strong> - Masukkan nominal dalam Rupiah</li>
+        <li><strong>Tanggal</strong> - Tanggal transaksi (default hari ini)</li>
+        <li><strong>Keterangan</strong> - Catatan tambahan (opsional)</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      <p><span class="step">5</span>Cetak struk untuk anggota</p>
+      
+      <h3>8.3 Transaksi Penarikan</h3>
+      <p>Penarikan hanya bisa dilakukan untuk Simpanan Khusus dan Simpanan Sukarela.</p>
+      
+      <p><span class="step">1</span>Buka menu "Transaksi Simpanan" → "Penarikan"</p>
+      <p><span class="step">2</span>Klik "+ Tambah Penarikan"</p>
+      <p><span class="step">3</span>Pilih anggota</p>
+      <p><span class="step">4</span>Pilih jenis simpanan (hanya Khusus/Sukarela)</p>
+      <p><span class="step">5</span>Masukkan jumlah penarikan</p>
+      <p><span class="step">6</span>Sistem akan validasi saldo mencukupi</p>
+      <p><span class="step">7</span>Klik "Simpan" dan cetak struk</p>
+      
+      <div class="warning">
+        <strong>Perhatian:</strong> Simpanan Pokok dan Wajib tidak bisa ditarik selama anggota masih aktif. Penarikan hanya bisa dilakukan saat anggota keluar dari koperasi.
+      </div>
+      
+      <h3>8.4 Cetak Struk</h3>
+      <p>Setiap transaksi dapat dicetak struk dengan informasi:</p>
+      <ul>
+        <li>Logo dan nama koperasi</li>
+        <li>Alamat dan kontak koperasi</li>
+        <li>Nomor dan tanggal transaksi</li>
+        <li>Data anggota</li>
+        <li>Detail transaksi</li>
+        <li>Saldo akhir</li>
+        <li>Tanda tangan kasir</li>
+      </ul>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="keuangan">9. TRANSAKSI KEUANGAN</h2>
+      
+      <h3>9.1 Transaksi Penjualan</h3>
+      <p>Catat semua penjualan dari unit usaha untuk perhitungan laba/rugi.</p>
+      
+      <h4>Menambah Transaksi Penjualan:</h4>
+      <p><span class="step">1</span>Buka menu "Transaksi Keuangan" → "Penjualan"</p>
+      <p><span class="step">2</span>Klik "+ Tambah Penjualan"</p>
+      <p><span class="step">3</span>Isi form:</p>
+      <ul>
+        <li><strong>Unit Usaha</strong> - Pilih unit usaha yang melakukan penjualan</li>
+        <li><strong>Tanggal</strong> - Tanggal transaksi</li>
+        <li><strong>Jumlah Penjualan</strong> - Total nilai penjualan (Rupiah)</li>
+        <li><strong>HPP</strong> - Harga Pokok Penjualan (Rupiah)</li>
+        <li><strong>Keuntungan</strong> - Otomatis terhitung (Penjualan - HPP)</li>
+        <li><strong>Keterangan</strong> - Catatan tambahan</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      
+      <h3>9.2 Transaksi Pengeluaran</h3>
+      <p>Catat semua biaya operasional koperasi dan unit usaha.</p>
+      
+      <h4>Kategori Pengeluaran:</h4>
+      <ul>
+        <li><strong>Operasional</strong> - Listrik, air, telepon, internet</li>
+        <li><strong>Gaji</strong> - Gaji karyawan dan pengurus</li>
+        <li><strong>Pembelian Barang</strong> - Stok barang dagangan</li>
+        <li><strong>Perawatan</strong> - Maintenance aset dan inventaris</li>
+        <li><strong>Lainnya</strong> - Pengeluaran lain-lain</li>
+      </ul>
+      
+      <h4>Menambah Pengeluaran:</h4>
+      <p><span class="step">1</span>Buka menu "Transaksi Keuangan" → "Pengeluaran"</p>
+      <p><span class="step">2</span>Klik "+ Tambah Pengeluaran"</p>
+      <p><span class="step">3</span>Isi form:</p>
+      <ul>
+        <li><strong>Unit Usaha</strong> - Pilih unit usaha (atau "Umum" untuk koperasi)</li>
+        <li><strong>Kategori</strong> - Pilih kategori pengeluaran</li>
+        <li><strong>Tanggal</strong> - Tanggal pengeluaran</li>
+        <li><strong>Jumlah</strong> - Nominal pengeluaran (Rupiah)</li>
+        <li><strong>Keterangan</strong> - Detail pengeluaran</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      
+      <h3>9.3 Kas Koperasi</h3>
+      <p>Monitoring saldo kas koperasi secara real-time:</p>
+      <ul>
+        <li><strong>Kas Masuk</strong> - Dari simpanan, penjualan, dll</li>
+        <li><strong>Kas Keluar</strong> - Untuk pengeluaran, penarikan, dll</li>
+        <li><strong>Saldo Kas</strong> - Kas Masuk - Kas Keluar</li>
+      </ul>
+      
+      <div class="success">
+        <strong>Otomatis Terintegrasi:</strong> Semua transaksi simpanan dan keuangan otomatis mempengaruhi saldo kas koperasi.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="laporan">10. LAPORAN KEUANGAN</h2>
+      
+      <h3>10.1 Jenis Laporan</h3>
+      <p>Sistem menyediakan berbagai laporan keuangan yang lengkap dan akurat:</p>
+      
+      <table>
+        <tr>
+          <th>Laporan</th>
+          <th>Deskripsi</th>
+          <th>Periode</th>
+        </tr>
+        <tr>
+          <td>Laporan Simpanan</td>
+          <td>Rekap semua transaksi simpanan</td>
+          <td>Harian, Bulanan, Tahunan</td>
+        </tr>
+        <tr>
+          <td>Laporan Penjualan</td>
+          <td>Rekap penjualan per unit usaha</td>
+          <td>Harian, Bulanan, Tahunan</td>
+        </tr>
+        <tr>
+          <td>Laporan Pengeluaran</td>
+          <td>Rekap pengeluaran per kategori</td>
+          <td>Harian, Bulanan, Tahunan</td>
+        </tr>
+        <tr>
+          <td>Laporan Laba/Rugi</td>
+          <td>Perhitungan profit/loss</td>
+          <td>Bulanan, Tahunan</td>
+        </tr>
+        <tr>
+          <td>Laporan Kas</td>
+          <td>Mutasi kas masuk dan keluar</td>
+          <td>Harian, Bulanan, Tahunan</td>
+        </tr>
+        <tr>
+          <td>Laporan SHU</td>
+          <td>Perhitungan dan distribusi SHU</td>
+          <td>Tahunan</td>
+        </tr>
+      </table>
+      
+      <h3>10.2 Cara Generate Laporan</h3>
+      <p><span class="step">1</span>Buka menu "Laporan"</p>
+      <p><span class="step">2</span>Pilih jenis laporan yang diinginkan</p>
+      <p><span class="step">3</span>Tentukan periode:</p>
+      <ul>
+        <li>Pilih tanggal mulai dan tanggal akhir</li>
+        <li>Atau pilih preset: Hari Ini, Minggu Ini, Bulan Ini, Tahun Ini</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Tampilkan Laporan"</p>
+      <p><span class="step">5</span>Review data di layar</p>
+      <p><span class="step">6</span>Export ke format yang diinginkan:</p>
+      <ul>
+        <li><strong>PDF</strong> - Untuk cetak atau arsip</li>
+        <li><strong>Excel</strong> - Untuk analisis lebih lanjut</li>
+      </ul>
+      
+      <h3>10.3 Laporan Laba/Rugi</h3>
+      <p>Format laporan laba/rugi standar akuntansi:</p>
+      
+      <div class="code">
+PENDAPATAN<br>
+&nbsp;&nbsp;Penjualan Unit Usaha A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Penjualan Unit Usaha B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Total Pendapatan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+<br>
+HARGA POKOK PENJUALAN<br>
+&nbsp;&nbsp;HPP Unit Usaha A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;HPP Unit Usaha B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Total HPP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+<br>
+LABA KOTOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+<br>
+BIAYA OPERASIONAL<br>
+&nbsp;&nbsp;Gaji&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Operasional&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Perawatan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Lainnya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+&nbsp;&nbsp;Total Biaya&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx<br>
+<br>
+LABA/RUGI BERSIH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rp xxx.xxx
+      </div>
+      
+      <div class="highlight">
+        <strong>Tips:</strong> Generate laporan secara berkala (mingguan/bulanan) untuk monitoring kinerja koperasi. Simpan laporan PDF sebagai arsip digital.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="shu">11. SISA HASIL USAHA (SHU)</h2>
+      
+      <h3>11.1 Tentang SHU</h3>
+      <p>Sisa Hasil Usaha (SHU) adalah keuntungan koperasi yang dibagikan kepada anggota berdasarkan kontribusi mereka. Perhitungan SHU mengikuti prinsip koperasi dan peraturan yang berlaku.</p>
+      
+      <h3>11.2 Komponen Perhitungan SHU</h3>
+      <table>
+        <tr>
+          <th>Komponen</th>
+          <th>Persentase</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td>Jasa Modal</td>
+          <td>40%</td>
+          <td>Berdasarkan total simpanan anggota</td>
+        </tr>
+        <tr>
+          <td>Jasa Usaha</td>
+          <td>40%</td>
+          <td>Berdasarkan partisipasi transaksi</td>
+        </tr>
+        <tr>
+          <td>Dana Cadangan</td>
+          <td>10%</td>
+          <td>Untuk cadangan koperasi</td>
+        </tr>
+        <tr>
+          <td>Dana Pengurus</td>
+          <td>5%</td>
+          <td>Untuk pengurus koperasi</td>
+        </tr>
+        <tr>
+          <td>Dana Pendidikan</td>
+          <td>5%</td>
+          <td>Untuk pendidikan anggota</td>
+        </tr>
+      </table>
+      
+      <h3>11.3 Cara Hitung SHU</h3>
+      <p><span class="step">1</span>Buka menu "Sisa Hasil Usaha"</p>
+      <p><span class="step">2</span>Klik "Hitung SHU Baru"</p>
+      <p><span class="step">3</span>Pilih periode (tahun)</p>
+      <p><span class="step">4</span>Masukkan total SHU yang akan dibagikan</p>
+      <p><span class="step">5</span>Sistem akan otomatis menghitung:</p>
+      <ul>
+        <li>Total simpanan per anggota</li>
+        <li>Total partisipasi per anggota</li>
+        <li>Jasa modal per anggota</li>
+        <li>Jasa usaha per anggota</li>
+        <li>Total SHU per anggota</li>
+      </ul>
+      <p><span class="step">6</span>Review hasil perhitungan</p>
+      <p><span class="step">7</span>Klik "Simpan" untuk menyimpan hasil</p>
+      <p><span class="step">8</span>Export ke PDF untuk dokumentasi</p>
+      
+      <h3>11.4 Rumus Perhitungan</h3>
+      <div class="code">
+SHU Anggota = Jasa Modal + Jasa Usaha<br>
+<br>
+Jasa Modal = (Simpanan Anggota / Total Simpanan) × 40% × Total SHU<br>
+<br>
+Jasa Usaha = (Partisipasi Anggota / Total Partisipasi) × 40% × Total SHU
+      </div>
+      
+      <div class="success">
+        <strong>Otomatis & Akurat:</strong> Sistem menghitung SHU secara otomatis berdasarkan data simpanan dan partisipasi yang tercatat sepanjang tahun.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="pengaturan">12. PENGATURAN SISTEM</h2>
+      
+      <h3>12.1 Manajemen User</h3>
+      <p>Admin dapat mengelola user yang memiliki akses ke sistem.</p>
+      
+      <h4>Menambah User Baru:</h4>
+      <p><span class="step">1</span>Buka menu "Pengaturan"</p>
+      <p><span class="step">2</span>Klik "+ Tambah User"</p>
+      <p><span class="step">3</span>Isi form:</p>
+      <ul>
+        <li><strong>Username</strong> - Username untuk login (unik)</li>
+        <li><strong>Password</strong> - Password yang kuat</li>
+        <li><strong>Nama Lengkap</strong> - Nama lengkap user</li>
+        <li><strong>Role</strong> - Pilih: Admin, Pengurus, atau Kasir</li>
+        <li><strong>Status</strong> - Aktif/Tidak Aktif</li>
+      </ul>
+      <p><span class="step">4</span>Klik "Simpan"</p>
+      
+      <h3>12.2 Hak Akses per Role</h3>
+      <table>
+        <tr>
+          <th>Menu</th>
+          <th>Admin</th>
+          <th>Pengurus</th>
+          <th>Kasir</th>
+        </tr>
+        <tr>
+          <td>Beranda</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>Info Koperasi</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Unit Usaha</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Manajemen Anggota</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Transaksi Simpanan</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>Transaksi Keuangan</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>Laporan</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>SHU</td>
+          <td>✓</td>
+          <td>✓</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Pengaturan</td>
+          <td>✓</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+      
+      <h3>12.3 Reset Database</h3>
+      <p>Untuk mengembalikan database ke kondisi awal (hanya data demo):</p>
+      
+      <div class="warning">
+        <strong>PERINGATAN:</strong> Reset database akan menghapus SEMUA data! Pastikan sudah backup terlebih dahulu.
+      </div>
+      
+      <p><span class="step">1</span>Stop aplikasi (Ctrl+C di terminal)</p>
+      <p><span class="step">2</span>Jalankan perintah:</p>
+      <div class="code">npm run reset-db<br><br># Atau double-click file reset-database.bat (Windows)</div>
+      <p><span class="step">3</span>Jalankan aplikasi kembali:</p>
+      <div class="code">npm start</div>
+      <p><span class="step">4</span>Login dengan kredensial default (admin/admin123)</p>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="troubleshooting">13. TROUBLESHOOTING</h2>
+      
+      <h3>13.1 Masalah Umum & Solusi</h3>
+      
+      <h4>Problem: Aplikasi tidak bisa dijalankan</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Pastikan Node.js sudah terinstall (cek dengan: node --version)</li>
+          <li>Jalankan npm install untuk install dependencies</li>
+          <li>Cek apakah port 3000 sudah digunakan aplikasi lain</li>
+          <li>Restart komputer dan coba lagi</li>
+        </ul>
+      </div>
+      
+      <h4>Problem: Tidak bisa login</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Pastikan username dan password benar (admin/admin123)</li>
+          <li>Cek apakah Caps Lock aktif</li>
+          <li>Clear browser cache dan cookies</li>
+          <li>Coba browser lain (Chrome/Firefox)</li>
+          <li>Reset database jika perlu</li>
+        </ul>
+      </div>
+      
+      <h4>Problem: Menu tidak muncul / stuck "Memuat data..."</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Buka Console Browser (F12) dan cek error</li>
+          <li>Refresh halaman (Ctrl + Shift + R)</li>
+          <li>Logout dan login kembali</li>
+          <li>Cek koneksi ke server (http://localhost:3000)</li>
+          <li>Restart aplikasi</li>
+        </ul>
+      </div>
+      
+      <h4>Problem: Error saat upload foto</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Pastikan ukuran file tidak lebih dari 5MB</li>
+          <li>Gunakan format JPG atau PNG</li>
+          <li>Cek folder uploads/ ada dan writable</li>
+          <li>Compress foto jika terlalu besar</li>
+        </ul>
+      </div>
+      
+      <h4>Problem: Grafik tidak muncul</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Pastikan ada data transaksi</li>
+          <li>Refresh halaman</li>
+          <li>Clear browser cache</li>
+          <li>Cek Console Browser untuk error Chart.js</li>
+        </ul>
+      </div>
+      
+      <h4>Problem: Export PDF/Excel tidak berfungsi</h4>
+      <div class="highlight">
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Pastikan browser mengizinkan download</li>
+          <li>Cek popup blocker tidak aktif</li>
+          <li>Coba browser lain</li>
+          <li>Pastikan ada data untuk di-export</li>
+        </ul>
+      </div>
+      
+      <h3>13.2 Error Database</h3>
+      
+      <h4>Error: "SQLITE_ERROR: no such table"</h4>
+      <div class="warning">
+        <strong>Penyebab:</strong> Tabel database belum dibuat atau corrupt<br>
+        <strong>Solusi:</strong> Reset database dengan npm run reset-db
+      </div>
+      
+      <h4>Error: "database is locked"</h4>
+      <div class="warning">
+        <strong>Penyebab:</strong> Database sedang diakses oleh proses lain<br>
+        <strong>Solusi:</strong>
+        <ul>
+          <li>Stop semua instance aplikasi</li>
+          <li>Tutup aplikasi yang mengakses file .db</li>
+          <li>Restart aplikasi</li>
+        </ul>
+      </div>
+      
+      <h3>13.3 Debugging</h3>
+      <p>Untuk debugging lebih lanjut:</p>
+      
+      <h4>Browser Console (F12):</h4>
+      <ul>
+        <li>Tab Console - Lihat error JavaScript</li>
+        <li>Tab Network - Cek API calls dan response</li>
+        <li>Tab Application - Cek localStorage dan session</li>
+      </ul>
+      
+      <h4>Server Console:</h4>
+      <ul>
+        <li>Lihat terminal tempat aplikasi berjalan</li>
+        <li>Cek error message dan stack trace</li>
+        <li>Perhatikan status code HTTP (200, 400, 500, dll)</li>
+      </ul>
+      
+      <div class="success">
+        <strong>Tips:</strong> Screenshot error message dan console log untuk memudahkan troubleshooting.
+      </div>
+    </div>
+    
+    <div class="page-break">
+      <h2 id="tips">14. TIPS & TRIK</h2>
+      
+      <h3>14.1 Best Practices</h3>
+      
+      <h4>Setup Awal:</h4>
+      <ol>
+        <li>Ganti password default segera setelah login pertama</li>
+        <li>Isi informasi koperasi lengkap dengan logo</li>
+        <li>Buat unit usaha sebelum input transaksi</li>
+        <li>Tambah anggota dengan data lengkap</li>
+        <li>Buat user tambahan sesuai kebutuhan (Pengurus, Kasir)</li>
+      </ol>
+      
+      <h4>Operasional Harian:</h4>
+      <ol>
+        <li>Input transaksi simpanan setiap hari</li>
+        <li>Catat penjualan dan pengeluaran secara rutin</li>
+        <li>Cetak struk untuk setiap transaksi</li>
+        <li>Cek dashboard untuk monitoring real-time</li>
+        <li>Backup data secara berkala</li>
+      </ol>
+      
+      <h4>Akhir Periode:</h4>
+      <ol>
+        <li>Generate laporan bulanan</li>
+        <li>Review laba/rugi per unit usaha</li>
+        <li>Export laporan ke PDF untuk arsip</li>
+        <li>Hitung SHU di akhir tahun</li>
+        <li>Backup database sebelum tahun baru</li>
+      </ol>
+      
+      <h3>14.2 Keyboard Shortcuts</h3>
+      <table>
+        <tr>
+          <th>Shortcut</th>
+          <th>Fungsi</th>
+        </tr>
+        <tr>
+          <td>F12</td>
+          <td>Buka Developer Console</td>
+        </tr>
+        <tr>
+          <td>Ctrl + Shift + R</td>
+          <td>Hard Refresh (clear cache)</td>
+        </tr>
+        <tr>
+          <td>Ctrl + P</td>
+          <td>Print halaman/struk</td>
+        </tr>
+        <tr>
+          <td>Ctrl + F</td>
+          <td>Search di halaman</td>
+        </tr>
+        <tr>
+          <td>Esc</td>
+          <td>Tutup modal/dialog</td>
+        </tr>
+      </table>
+      
+      <h3>14.3 Tips Keamanan</h3>
+      <ul>
+        <li><strong>Password Kuat</strong> - Minimal 8 karakter, kombinasi huruf, angka, simbol</li>
+        <li><strong>Ganti Password Berkala</strong> - Setiap 3-6 bulan</li>
+        <li><strong>Jangan Share Akun</strong> - Buat user terpisah untuk setiap orang</li>
+        <li><strong>Logout Setelah Selesai</strong> - Terutama di komputer bersama</li>
+        <li><strong>Backup Rutin</strong> - Minimal seminggu sekali</li>
+        <li><strong>Update Aplikasi</strong> - Jika ada versi baru</li>
+      </ul>
+      
+      <h3>14.4 Tips Backup & Restore</h3>
+      
+      <h4>Backup Manual:</h4>
+      <p><span class="step">1</span>Stop aplikasi</p>
+      <p><span class="step">2</span>Copy file koperasi.db ke folder backup</p>
+      <p><span class="step">3</span>Beri nama dengan tanggal (contoh: koperasi-2024-11-08.db)</p>
+      <p><span class="step">4</span>Simpan di lokasi aman (external drive, cloud storage)</p>
+      
+      <h4>Restore dari Backup:</h4>
+      <p><span class="step">1</span>Stop aplikasi</p>
+      <p><span class="step">2</span>Hapus atau rename file koperasi.db yang lama</p>
+      <p><span class="step">3</span>Copy file backup ke folder aplikasi</p>
+      <p><span class="step">4</span>Rename menjadi koperasi.db</p>
+      <p><span class="step">5</span>Jalankan aplikasi kembali</p>
+      
+      <h3>14.5 Tips Performa</h3>
+      <ul>
+        <li><strong>Gunakan Browser Modern</strong> - Chrome atau Firefox versi terbaru</li>
+        <li><strong>Clear Cache Berkala</strong> - Untuk performa optimal</li>
+        <li><strong>Tutup Tab Tidak Terpakai</strong> - Hemat memory</li>
+        <li><strong>Restart Aplikasi</strong> - Jika terasa lambat</li>
+        <li><strong>Compress Foto</strong> - Sebelum upload untuk hemat storage</li>
+      </ul>
+      
+      <h3>14.6 Tips Export & Print</h3>
+      <ul>
+        <li><strong>Export Excel</strong> - Untuk analisis dan edit data</li>
+        <li><strong>Export PDF</strong> - Untuk arsip dan dokumentasi resmi</li>
+        <li><strong>Print Struk</strong> - Gunakan thermal printer untuk hasil terbaik</li>
+        <li><strong>Print Laporan</strong> - Set margin dan orientation sesuai kebutuhan</li>
+        <li><strong>Save as PDF</strong> - Dari print dialog untuk arsip digital</li>
+      </ul>
+      
+      <h3>14.7 Tips Organisasi Data</h3>
+      <ul>
+        <li><strong>Nomor Anggota</strong> - Gunakan format konsisten (A001, A002, dst)</li>
+        <li><strong>Nama Unit Usaha</strong> - Singkat dan jelas</li>
+        <li><strong>Kategori Pengeluaran</strong> - Konsisten untuk memudahkan laporan</li>
+        <li><strong>Keterangan Transaksi</strong> - Isi dengan detail yang cukup</li>
+        <li><strong>Foto Anggota</strong> - Gunakan foto formal dengan background polos</li>
+      </ul>
+      
+      <div class="success">
+        <strong>Ingat:</strong> Konsistensi dalam input data akan memudahkan analisis dan pelaporan di kemudian hari!
+      </div>
+    </div>
+    
+    <!-- Footer & Print Button -->
+    <div class="page-break">
+      <h2>PENUTUP</h2>
+      
+      <p>Dokumentasi ini dibuat untuk membantu Anda dalam menggunakan Sistem Manajemen Koperasi NU Vibes secara optimal. Semua fitur dirancang untuk kemudahan penggunaan dengan interface yang intuitif dan modern.</p>
+      
+      <h3>Dukungan & Bantuan</h3>
+      <p>Jika Anda mengalami kesulitan atau memiliki pertanyaan:</p>
+      <ul>
+        <li>Baca dokumentasi ini dengan teliti</li>
+        <li>Cek bagian Troubleshooting untuk solusi masalah umum</li>
+        <li>Buka Console Browser (F12) untuk debugging</li>
+        <li>Screenshot error message untuk referensi</li>
+      </ul>
+      
+      <h3>Pengembangan Berkelanjutan</h3>
+      <p>Aplikasi ini akan terus dikembangkan dengan fitur-fitur baru. Pastikan untuk:</p>
+      <ul>
+        <li>Backup data secara rutin</li>
+        <li>Update ke versi terbaru jika tersedia</li>
+        <li>Berikan feedback untuk perbaikan</li>
+      </ul>
+      
+      <div class="success">
+        <strong>Selamat menggunakan Koperasi NU Vibes!</strong><br>
+        Semoga sistem ini dapat membantu meningkatkan efisiensi dan transparansi pengelolaan koperasi Anda.
+      </div>
+      
+      <div class="footer">
+        <h3>KOPERASI NU VIBES</h3>
+        <p><strong>Sistem Manajemen Koperasi Terpadu</strong></p>
+        <p>Versi 1.0 - 2024</p>
+        <p>© 2024 Koperasi NU Vibes. All Rights Reserved.</p>
+        <br>
+        <p style="font-size: 9pt; color: #999;">
+          Dokumentasi ini dapat dicetak atau disimpan sebagai PDF untuk referensi offline.<br>
+          Untuk mencetak: Tekan Ctrl+P atau klik tombol Print di bawah.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Print Button (No Print) -->
+    <div class="no-print" style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+      <h3 style="color: #2d5016; margin-bottom: 15px;">Cetak atau Simpan Dokumentasi</h3>
+      <p style="margin-bottom: 20px;">Klik tombol di bawah untuk mencetak atau menyimpan dokumentasi ini sebagai PDF</p>
+      <button onclick="window.print()" class="btn" style="font-size: 16px; padding: 15px 40px; cursor: pointer; border: none;">
+        🖨️ Cetak / Save as PDF
+      </button>
+      <br><br>
+      <a href="/index.html" class="btn">🏠 Kembali ke Dashboard</a>
+      <a href="/docs.html" class="btn">📚 Dokumentasi Singkat</a>
+    </div>
+    
+  </div>
+</body>
+</html>

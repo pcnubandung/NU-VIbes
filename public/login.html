@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-header">
+        <img id="loginLogo" class="login-logo-image" src="" alt="Logo Koperasi" style="display: none;">
+        <div class="logo-circle" id="loginLogoPlaceholder">
+          <span class="logo-text">NU</span>
+        </div>
+        <h1>Koperasi NU Vibes</h1>
+        <p>Sistem Manajemen Koperasi</p>
+      </div>
+      
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+      </form>
+      
+      <div class="login-footer">
+        <p>© 2024 Koperasi NU Vibes. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+  <script>
+    feather.replace();
+    
+    // Load logo koperasi
+    async function loadLoginLogo() {
+      try {
+        const response = await fetch('/api/koperasi/logo');
+        const data = await response.json();
+        
+        if (data.logo) {
+          const loginLogo = document.getElementById('loginLogo');
+          const loginLogoPlaceholder = document.getElementById('loginLogoPlaceholder');
+          
+          loginLogo.src = data.logo;
+          loginLogo.style.display = 'block';
+          if (loginLogoPlaceholder) loginLogoPlaceholder.style.display = 'none';
+        }
+      } catch (error) {
+        console.error('Error loading logo:', error);
+      }
+    }
+    
+    loadLoginLogo();
+  </script>
+</body>
+</html>

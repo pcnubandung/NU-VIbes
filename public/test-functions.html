@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Functions</title>
+</head>
+<body>
+  <h1>Test Functions</h1>
+  <div id="result"></div>
+  
+  <script src="js/app.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/pages-extended.js"></script>
+  <script src="js/pages-management.js"></script>
+  <script src="js/pages-transaksi.js"></script>
+  <script src="js/pages.js"></script>
+  
+  <script>
+    const result = document.getElementById('result');
+    
+    // Test if functions are defined
+    const tests = [
+      { name: 'loadPage', func: window.loadPage },
+      { name: 'renderBeranda', func: window.renderBeranda },
+      { name: 'renderInfoKoperasi', func: window.renderInfoKoperasi },
+      { name: 'renderUnitUsaha', func: window.renderUnitUsaha },
+      { name: 'renderAsetInventaris', func: window.renderAsetInventaris },
+      { name: 'renderDataAnggota', func: window.renderDataAnggota },
+      { name: 'renderDataPengurus', func: window.renderDataPengurus },
+      { name: 'renderDataKaryawan', func: window.renderDataKaryawan },
+      { name: 'renderSimpanan', func: window.renderSimpanan },
+      { name: 'renderPartisipasiAnggota', func: window.renderPartisipasiAnggota },
+      { name: 'renderPenjualan', func: window.renderPenjualan },
+      { name: 'renderPengeluaran', func: window.renderPengeluaran },
+      { name: 'renderSHU', func: window.renderSHU },
+      { name: 'renderLaporan', func: window.renderLaporan },
+      { name: 'renderPengaturan', func: window.renderPengaturan }
+    ];
+    
+    let html = '<h2>Function Test Results:</h2><ul>';
+    
+    tests.forEach(test => {
+      const status = typeof test.func === 'function' ? '✅ DEFINED' : '❌ UNDEFINED';
+      const color = typeof test.func === 'function' ? 'green' : 'red';
+      html += `<li style="color: ${color}"><strong>${test.name}</strong>: ${status}</li>`;
+    });
+    
+    html += '</ul>';
+    result.innerHTML = html;
+    
+    // Log to console
+    console.log('=== FUNCTION TEST ===');
+    tests.forEach(test => {
+      console.log(`${test.name}: ${typeof test.func}`);
+    });
+  </script>
+</body>
+</html>

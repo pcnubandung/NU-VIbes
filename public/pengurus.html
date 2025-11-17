@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manajemen Koperasi - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/pengurus.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="/uploads/logo.png" alt="Logo" class="nav-logo" id="navLogo">
+        <span class="nav-title">Koperasi NU Vibes</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/landing.html" class="nav-link">Beranda</a></li>
+        <li><a href="/landing.html#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="/pengurus.html" class="nav-link active">Pengurus</a></li>
+        <li><a href="/publikasi.html" class="nav-link">Publikasi</a></li>
+        <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+        <li><a href="/landing.html#kontak" class="nav-link">Kontak</a></li>
+        <li><a href="/login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Struktur Pengurus</h1>
+      <p>Tim Profesional yang Mengabdi untuk Anggota</p>
+    </div>
+  </section>
+
+  <!-- Pengurus Section -->
+  <section class="pengurus-section">
+    <div class="container">
+      <!-- Loading State -->
+      <div class="loading" id="loadingState">Memuat data pengurus...</div>
+
+      <!-- Pengurus Content -->
+      <div id="pengurusContent" style="display: none;">
+        <!-- Pengawas -->
+        <div class="pengurus-group">
+          <div class="group-header">
+            <div class="group-icon">
+              <i data-feather="shield"></i>
+            </div>
+            <h2>Pengawas</h2>
+            <p>Mengawasi jalannya organisasi dan keuangan koperasi</p>
+          </div>
+          <div class="pengurus-grid" id="pengawasGrid"></div>
+        </div>
+
+        <!-- Pengurus Inti (Ketua, Sekretaris, Bendahara) -->
+        <div class="pengurus-group">
+          <div class="group-header">
+            <div class="group-icon">
+              <i data-feather="award"></i>
+            </div>
+            <h2>Pengurus Inti</h2>
+            <p>Ketua, Sekretaris, dan Bendahara Koperasi</p>
+          </div>
+          <div class="pengurus-grid ketua-grid" id="pengurusIntiGrid"></div>
+        </div>
+
+        <!-- Anggota Pengurus -->
+        <div class="pengurus-group">
+          <div class="group-header">
+            <div class="group-icon">
+              <i data-feather="users"></i>
+            </div>
+            <h2>Anggota Pengurus</h2>
+            <p>Membantu operasional dan pengembangan koperasi</p>
+          </div>
+          <div class="pengurus-grid" id="anggotaGrid"></div>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <i data-feather="users"></i>
+        <h3>Data Pengurus Belum Tersedia</h3>
+        <p>Informasi pengurus koperasi akan segera ditampilkan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Koperasi NU Vibes</h4>
+          <p>Koperasi Warga Nahdliyyin yang Amanah, Profesional, dan Terpercaya</p>
+        </div>
+        <div class="footer-col">
+          <h4>Link Cepat</h4>
+          <ul>
+            <li><a href="/landing.html">Beranda</a></li>
+            <li><a href="/pengurus.html">Manajemen</a></li>
+            <li><a href="/publikasi.html">Publikasi</a></li>
+            <li><a href="/galeri.html">Galeri</a></li>
+            <li><a href="/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <p id="footerAlamat">-</p>
+          <p id="footerTelpon">-</p>
+          <p id="footerEmail">-</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Koperasi NU Vibes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/pengurus-public.js"></script>
+</body>
+</html>

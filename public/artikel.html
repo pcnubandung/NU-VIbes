@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Artikel - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/publikasi-public.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="/uploads/logo.png" alt="Logo" class="nav-logo" id="navLogo">
+        <span class="nav-title">Koperasi NU Vibes</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/landing.html" class="nav-link">Beranda</a></li>
+        <li><a href="/landing.html#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="/pengurus.html" class="nav-link">Pengurus</a></li>
+        <li><a href="/publikasi.html" class="nav-link active">Publikasi</a></li>
+        <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+        <li><a href="/landing.html#kontak" class="nav-link">Kontak</a></li>
+        <li><a href="/login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Artikel Detail -->
+  <article class="artikel-detail">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="/landing.html">Beranda</a>
+        <i data-feather="chevron-right"></i>
+        <a href="/publikasi.html">Publikasi</a>
+        <i data-feather="chevron-right"></i>
+        <span id="breadcrumbTitle">Artikel</span>
+      </div>
+
+      <!-- Loading State -->
+      <div class="loading" id="loadingState">Memuat artikel...</div>
+
+      <!-- Artikel Content -->
+      <div id="artikelContent" style="display: none;">
+        <!-- Hero Image -->
+        <div class="artikel-hero" id="artikelHero"></div>
+
+        <!-- Artikel Header -->
+        <div class="artikel-header">
+          <span class="artikel-kategori-badge" id="artikelKategori"></span>
+          <h1 id="artikelJudul"></h1>
+          <div class="artikel-meta">
+            <span><i data-feather="calendar"></i> <span id="artikelTanggal"></span></span>
+            <span><i data-feather="user"></i> <span id="artikelPenulis"></span></span>
+            <span><i data-feather="eye"></i> <span id="artikelViews"></span> views</span>
+          </div>
+        </div>
+
+        <!-- Artikel Body -->
+        <div class="artikel-body" id="artikelBody"></div>
+
+        <!-- Share Buttons -->
+        <div class="share-section">
+          <h3>Bagikan Artikel</h3>
+          <div class="share-buttons">
+            <button class="share-btn facebook" onclick="shareToFacebook()">
+              <i data-feather="facebook"></i> Facebook
+            </button>
+            <button class="share-btn twitter" onclick="shareToTwitter()">
+              <i data-feather="twitter"></i> Twitter
+            </button>
+            <button class="share-btn whatsapp" onclick="shareToWhatsApp()">
+              <i data-feather="message-circle"></i> WhatsApp
+            </button>
+            <button class="share-btn copy" onclick="copyLink()">
+              <i data-feather="link"></i> Copy Link
+            </button>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="related-section">
+          <h3>Artikel Terkait</h3>
+          <div class="related-grid" id="relatedGrid"></div>
+        </div>
+      </div>
+
+      <!-- Error State -->
+      <div class="error-state" id="errorState" style="display: none;">
+        <i data-feather="alert-circle"></i>
+        <h2>Artikel Tidak Ditemukan</h2>
+        <p>Artikel yang Anda cari tidak tersedia atau telah dihapus.</p>
+        <a href="/publikasi.html" class="btn btn-primary">Kembali ke Publikasi</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Koperasi NU Vibes</h4>
+          <p>Koperasi Warga Nahdliyyin yang Amanah, Profesional, dan Terpercaya</p>
+        </div>
+        <div class="footer-col">
+          <h4>Link Cepat</h4>
+          <ul>
+            <li><a href="/landing.html">Beranda</a></li>
+            <li><a href="/publikasi.html">Publikasi</a></li>
+            <li><a href="/galeri.html">Galeri</a></li>
+            <li><a href="/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <p id="footerAlamat">-</p>
+          <p id="footerTelpon">-</p>
+          <p id="footerEmail">-</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Koperasi NU Vibes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/publikasi-public.js"></script>
+</body>
+</html>

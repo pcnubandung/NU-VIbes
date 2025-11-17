@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Portal - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/member.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="member-portal">
+  <!-- Header -->
+  <header class="member-header">
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-image-container" id="memberPortalLogoContainer">
+          <img id="memberPortalLogo" src="" alt="Logo Koperasi" style="display: none;">
+          <div class="logo-circle" id="memberPortalLogoPlaceholder">
+            <span class="logo-text">NU</span>
+          </div>
+        </div>
+        <div class="logo-info">
+          <h1>NU Vibes</h1>
+          <p>Member Portal</p>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <div class="user-info">
+          <div class="user-avatar" id="memberAvatar">
+            <i data-feather="user"></i>
+          </div>
+          <div class="user-details">
+            <span class="user-name" id="memberName">Loading...</span>
+            <span class="user-role">Anggota</span>
+          </div>
+        </div>
+        <button class="btn-logout" id="logoutBtn">
+          <i data-feather="log-out"></i>
+          <span>Logout</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="member-nav">
+    <div class="nav-container">
+      <button class="nav-item active" data-page="dashboard">
+        <i data-feather="home"></i>
+        <span>Dashboard</span>
+      </button>
+      <button class="nav-item" data-page="profil">
+        <i data-feather="user"></i>
+        <span>Profil Saya</span>
+      </button>
+      <button class="nav-item" data-page="simpanan">
+        <i data-feather="dollar-sign"></i>
+        <span>Simpanan</span>
+      </button>
+      <button class="nav-item" data-page="transaksi">
+        <i data-feather="file-text"></i>
+        <span>Riwayat</span>
+      </button>
+      <button class="nav-item" data-page="laporan">
+        <i data-feather="bar-chart-2"></i>
+        <span>Laporan Keuangan</span>
+      </button>
+      <button class="nav-item" data-page="shu">
+        <i data-feather="gift"></i>
+        <span>SHU Saya</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Date Info -->
+  <div class="member-date-info" id="memberCurrentDate">
+    <i data-feather="calendar"></i>
+    <span id="memberDateText">Loading...</span>
+  </div>
+
+  <!-- Main Content -->
+  <main class="member-content">
+    <div class="content-container" id="memberContent">
+      <!-- Content will be loaded here -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="member-footer">
+    <p>&copy; 2024 Koperasi NU Vibes. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/member.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

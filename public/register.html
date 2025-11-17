@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Anggota - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/register.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="/uploads/logo.png" alt="Logo" id="headerLogo">
+          <span>Koperasi NU Vibes</span>
+        </div>
+        <a href="/landing.html" class="btn-back">
+          <i data-feather="arrow-left"></i> Kembali
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="register-wrapper">
+        <!-- Info Section -->
+        <div class="info-section">
+          <h1>Daftar Sebagai Anggota</h1>
+          <p class="subtitle">Bergabunglah dengan Koperasi NU Vibes dan nikmati berbagai keuntungan</p>
+          
+          <div class="benefits">
+            <h3>Keuntungan Menjadi Anggota:</h3>
+            <div class="benefit-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Simpanan Aman</h4>
+                <p>Dana Anda dikelola dengan profesional dan transparan</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Unit Usaha</h4>
+                <p>Berbagai usaha produktif untuk anggota</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>SHU Tahunan</h4>
+                <p>Dapatkan bagian dari keuntungan koperasi</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Portal Online</h4>
+                <p>Akses informasi kapan saja, dimana saja</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-box">
+            <i data-feather="help-circle"></i>
+            <div>
+              <h4>Butuh Bantuan?</h4>
+              <p>Hubungi kami di <strong id="contactPhone">-</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+          <div class="form-card">
+            <div class="form-header">
+              <h2>Form Pendaftaran</h2>
+              <p>Lengkapi data diri Anda dengan benar</p>
+            </div>
+
+            <form id="registerForm" class="register-form">
+              <!-- Data Pribadi -->
+              <div class="form-section-title">
+                <i data-feather="user"></i>
+                <span>Data Pribadi</span>
+              </div>
+
+              <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap *</label>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nik">NIK</label>
+                  <input type="text" id="nik" name="nik" maxlength="16" placeholder="16 digit">
+                </div>
+                <div class="form-group">
+                  <label for="jenis_kelamin">Jenis Kelamin</label>
+                  <select id="jenis_kelamin" name="jenis_kelamin">
+                    <option value="">Pilih</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tempat_lahir">Tempat Lahir</label>
+                  <input type="text" id="tempat_lahir" name="tempat_lahir">
+                </div>
+                <div class="form-group">
+                  <label for="tanggal_lahir">Tanggal Lahir</label>
+                  <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                </div>
+              </div>
+
+              <!-- Kontak -->
+              <div class="form-section-title">
+                <i data-feather="phone"></i>
+                <span>Informasi Kontak</span>
+              </div>
+
+              <div class="form-group">
+                <label for="alamat">Alamat Lengkap *</label>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nomor_telpon">Nomor Telepon *</label>
+                  <input type="tel" id="nomor_telpon" name="nomor_telpon" required placeholder="08xxxxxxxxxx">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="email@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="pekerjaan">Pekerjaan</label>
+                <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Contoh: Wiraswasta">
+              </div>
+
+              <!-- Upload Dokumen -->
+              <div class="form-section-title">
+                <i data-feather="upload"></i>
+                <span>Upload Dokumen</span>
+              </div>
+
+              <div class="info-note">
+                <i data-feather="info"></i>
+                <p>Upload foto KTP dan pas foto untuk verifikasi identitas. Format: JPG, PNG (Max 2MB)</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="foto_ktp">Foto KTP *</label>
+                  <input type="file" id="foto_ktp" name="foto_ktp" accept="image/*" required>
+                  <small>Upload foto/scan KTP yang jelas</small>
+                </div>
+                <div class="form-group">
+                  <label for="pas_foto">Pas Foto *</label>
+                  <input type="file" id="pas_foto" name="pas_foto" accept="image/*" required>
+                  <small>Upload pas foto ukuran 3x4 atau 4x6</small>
+                </div>
+              </div>
+
+              <!-- Preview Images -->
+              <div class="form-row">
+                <div class="form-group">
+                  <div id="preview_ktp" class="image-preview"></div>
+                </div>
+                <div class="form-group">
+                  <div id="preview_foto" class="image-preview"></div>
+                </div>
+              </div>
+
+              <!-- Akun Portal -->
+              <div class="form-section-title">
+                <i data-feather="lock"></i>
+                <span>Akun Portal Anggota (Opsional)</span>
+              </div>
+
+              <div class="info-note">
+                <i data-feather="info"></i>
+                <p>Buat username dan password untuk mengakses portal anggota online</p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" placeholder="Minimal 4 karakter">
+                  <small>Kosongkan jika tidak ingin membuat akun portal</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Minimal 6 karakter">
+                  <small>Kosongkan jika tidak ingin membuat akun portal</small>
+                </div>
+              </div>
+
+              <!-- Agreement -->
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="agreement" required>
+                  <span>Saya menyetujui <a href="#" onclick="showTerms(); return false;">syarat dan ketentuan</a> yang berlaku</span>
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <i data-feather="user-plus"></i>
+                <span>Daftar Sekarang</span>
+              </button>
+
+              <p class="form-footer">
+                Sudah menjadi anggota? <a href="/member.html">Login di sini</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content success">
+      <div class="modal-icon">
+        <i data-feather="check-circle"></i>
+      </div>
+      <h2>Pendaftaran Berhasil!</h2>
+      <p>Terima kasih telah mendaftar sebagai anggota Koperasi NU Vibes.</p>
+      <div class="success-info">
+        <p><strong>Nomor Anggota Anda:</strong></p>
+        <p class="member-number" id="memberNumber">-</p>
+        <p class="note">Simpan nomor anggota Anda untuk keperluan transaksi</p>
+      </div>
+      <div class="modal-actions">
+        <button onclick="window.location.href='/landing.html'" class="btn-primary">Kembali ke Beranda</button>
+        <button onclick="window.location.href='/member.html'" class="btn-secondary">Login Portal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div class="modal" id="termsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Syarat dan Ketentuan</h2>
+        <button class="modal-close" onclick="closeTerms()">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>Syarat Keanggotaan</h3>
+        <ol>
+          <li>Warga Negara Indonesia yang berusia minimal 17 tahun</li>
+          <li>Memiliki KTP yang masih berlaku</li>
+          <li>Bersedia membayar simpanan pokok dan simpanan wajib</li>
+          <li>Mematuhi Anggaran Dasar dan Anggaran Rumah Tangga Koperasi</li>
+        </ol>
+
+        <h3>Hak Anggota</h3>
+        <ol>
+          <li>Menghadiri, menyampaikan pendapat, dan memberikan suara dalam Rapat Anggota</li>
+          <li>Memilih dan/atau dipilih menjadi pengurus atau pengawas</li>
+          <li>Meminta diadakan Rapat Anggota sesuai ketentuan</li>
+          <li>Mengemukakan pendapat atau saran kepada pengurus</li>
+          <li>Memanfaatkan pelayanan koperasi dan mendapat bagian SHU</li>
+        </ol>
+
+        <h3>Kewajiban Anggota</h3>
+        <ol>
+          <li>Mematuhi Anggaran Dasar dan Anggaran Rumah Tangga</li>
+          <li>Mematuhi keputusan yang telah disepakati dalam Rapat Anggota</li>
+          <li>Berpartisipasi dalam kegiatan usaha yang diselenggarakan koperasi</li>
+          <li>Mengembangkan dan memelihara kebersamaan berdasarkan asas kekeluargaan</li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button onclick="closeTerms()" class="btn-primary">Saya Mengerti</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

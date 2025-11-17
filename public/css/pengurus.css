@@ -1,0 +1,377 @@
+/* Pengurus Page Styles */
+
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  color: white;
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+  background-size: 100px 100px;
+  opacity: 0.3;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header p {
+  font-size: 18px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+/* Pengurus Section */
+.pengurus-section {
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #f8f9fa 0%, white 100%);
+}
+
+/* Pengurus Group */
+.pengurus-group {
+  margin-bottom: 80px;
+}
+
+.pengurus-group:last-child {
+  margin-bottom: 0;
+}
+
+/* Group Header */
+.group-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.group-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.group-icon i {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.group-header h2 {
+  font-size: 36px;
+  color: #2E7D32;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.group-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Pengurus Grid */
+.pengurus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Ketua Grid - 3 Columns for Desktop */
+.ketua-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+/* Responsive for Ketua Grid */
+@media (max-width: 1024px) {
+  .ketua-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ketua-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pengurus Card */
+.pengurus-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.pengurus-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #2E7D32, #4CAF50, #FFC107);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.pengurus-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 40px rgba(46, 125, 50, 0.2);
+}
+
+.pengurus-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Photo Container */
+.pengurus-photo {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+}
+
+.pengurus-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.pengurus-card:hover .pengurus-photo img {
+  transform: scale(1.1);
+}
+
+.pengurus-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2E7D32, #4CAF50);
+}
+
+.pengurus-placeholder i {
+  width: 100px;
+  height: 100px;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Jabatan Badge */
+.jabatan-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(46, 125, 50, 0.95);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pengurus Info */
+.pengurus-info {
+  padding: 28px;
+  text-align: center;
+}
+
+.pengurus-info h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.pengurus-info .periode {
+  display: inline-block;
+  background: #FFF9C4;
+  color: #F57F17;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.contact-item:hover {
+  color: #2E7D32;
+}
+
+.contact-item i {
+  width: 18px;
+  height: 18px;
+  color: #2E7D32;
+  flex-shrink: 0;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: #999;
+  font-size: 18px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 100px 20px;
+  color: #999;
+}
+
+.empty-state i {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+  color: #ccc;
+}
+
+.empty-state h3 {
+  font-size: 28px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 60px 0 40px;
+  }
+  
+  .page-header h1 {
+    font-size: 32px;
+  }
+  
+  .pengurus-section {
+    padding: 60px 0;
+  }
+  
+  .pengurus-group {
+    margin-bottom: 60px;
+  }
+  
+  .group-header h2 {
+    font-size: 28px;
+  }
+  
+  .group-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .group-icon i {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .pengurus-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .pengurus-photo {
+    height: 280px;
+  }
+  
+  .pengurus-info h3 {
+    font-size: 20px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .footer {
+    display: none;
+  }
+  
+  .pengurus-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .page-header {
+    background: white;
+    color: #333;
+    padding: 20px 0;
+  }
+}

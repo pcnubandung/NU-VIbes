@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel & Berita - Koperasi NU Vibes</title>
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/publikasi-public.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="/uploads/logo.png" alt="Logo" class="nav-logo" id="navLogo">
+        <span class="nav-title">Koperasi NU Vibes</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/landing.html" class="nav-link">Beranda</a></li>
+        <li><a href="/landing.html#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="/pengurus.html" class="nav-link">Pengurus</a></li>
+        <li><a href="/publikasi.html" class="nav-link active">Publikasi</a></li>
+        <li><a href="/galeri.html" class="nav-link">Galeri</a></li>
+        <li><a href="/landing.html#kontak" class="nav-link">Kontak</a></li>
+        <li><a href="/login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Artikel & Berita</h1>
+      <p>Informasi dan update terkini dari Koperasi NU Vibes</p>
+    </div>
+  </section>
+
+  <!-- Filter & Search -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="search-box">
+          <i data-feather="search"></i>
+          <input type="text" id="searchInput" placeholder="Cari artikel...">
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-kategori="all">Semua</button>
+          <button class="filter-btn" data-kategori="berita">Berita</button>
+          <button class="filter-btn" data-kategori="artikel">Artikel</button>
+          <button class="filter-btn" data-kategori="tutorial">Tutorial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artikel List -->
+  <section class="artikel-list-section">
+    <div class="container">
+      <div class="artikel-grid" id="artikelGrid">
+        <div class="loading">Memuat artikel...</div>
+      </div>
+      
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <i data-feather="file-text"></i>
+        <p>Tidak ada artikel ditemukan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Koperasi NU Vibes</h4>
+          <p>Koperasi Warga Nahdliyyin yang Amanah, Profesional, dan Terpercaya</p>
+        </div>
+        <div class="footer-col">
+          <h4>Link Cepat</h4>
+          <ul>
+            <li><a href="/landing.html">Beranda</a></li>
+            <li><a href="/publikasi.html">Publikasi</a></li>
+            <li><a href="/galeri.html">Galeri</a></li>
+            <li><a href="/login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <p id="footerAlamat">-</p>
+          <p id="footerTelpon">-</p>
+          <p id="footerEmail">-</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Koperasi NU Vibes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/publikasi-public.js"></script>
+</body>
+</html>

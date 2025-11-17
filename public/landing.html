@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koperasi NU Vibes - Koperasi Warga Nahdliyyin</title>
+  <meta name="description" content="Koperasi NU Vibes adalah Koperasi Warga Nahdliyyin yang melayani anggota dengan profesional dan amanah">
+  <link rel="stylesheet" href="css/landing.css">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="/uploads/logo.png" alt="Logo" class="nav-logo" id="navLogo">
+        <span class="nav-title">Koperasi NU Vibes</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="/pengurus.html" class="nav-link">Pengurus</a></li>
+        <li><a href="#layanan" class="nav-link">Layanan</a></li>
+        <li><a href="#produk" class="nav-link">Produk</a></li>
+        <li><a href="#publikasi" class="nav-link">Publikasi</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        <li><a href="/login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="beranda">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Selamat Datang di<br><span>Koperasi NU Vibes</span></h1>
+        <p class="hero-subtitle">Koperasi Warga Nahdliyyin yang Amanah, Profesional, dan Terpercaya</p>
+        <div class="hero-buttons">
+          <a href="/register.html" class="btn btn-primary" onclick="console.log('Hero button clicked'); return true;">Daftar Sekarang</a>
+          <a href="#tentang" class="btn btn-outline">Tentang Kami</a>
+          <a href="/member.html" class="btn btn-outline">Portal Anggota</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i data-feather="users"></i>
+          <h3 id="totalAnggota">0</h3>
+          <p>Anggota Aktif</p>
+        </div>
+        <div class="stat-item">
+          <i data-feather="dollar-sign"></i>
+          <h3 id="totalSimpanan">Rp 0</h3>
+          <p>Total Simpanan</p>
+        </div>
+        <div class="stat-item">
+          <i data-feather="trending-up"></i>
+          <h3 id="totalAset">Rp 0</h3>
+          <p>Total Aset</p>
+        </div>
+        <div class="stat-item">
+          <i data-feather="award"></i>
+          <h3 id="tahunBerdiri">2024</h3>
+          <p>Tahun Berdiri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tentang Kami</h2>
+        <p>Mengenal Lebih Dekat Koperasi NU Vibes</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Koperasi Warga Nahdliyyin Terpercaya</h3>
+          <p>Koperasi NU Vibes adalah Koperasi Warga Nahdliyyin yang didirikan dengan tujuan meningkatkan kesejahteraan anggota melalui pelayanan keuangan yang amanah dan profesional.</p>
+          <p>Kami berkomitmen untuk memberikan layanan terbaik kepada seluruh anggota dengan prinsip kekeluargaan, transparansi, dan akuntabilitas.</p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Amanah</h4>
+                <p>Mengelola dana anggota dengan penuh tanggung jawab</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Profesional</h4>
+                <p>Pelayanan yang cepat, tepat, dan berkualitas</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i data-feather="check-circle"></i>
+              <div>
+                <h4>Transparan</h4>
+                <p>Laporan keuangan yang jelas dan terbuka</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="/assets/about-image.jpg" alt="Tentang Kami" id="aboutImage">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <h2>Layanan Kami</h2>
+        <p>Berbagai Layanan untuk Kesejahteraan Anggota</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-feather="save"></i>
+          </div>
+          <h3>Simpanan</h3>
+          <p>Berbagai jenis simpanan untuk memenuhi kebutuhan anggota</p>
+          <ul>
+            <li>Simpanan Pokok</li>
+            <li>Simpanan Wajib</li>
+            <li>Simpanan Khusus</li>
+            <li>Simpanan Sukarela</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-feather="shopping-bag"></i>
+          </div>
+          <h3>Unit Usaha</h3>
+          <p>Berbagai unit usaha untuk meningkatkan pendapatan koperasi</p>
+          <ul>
+            <li>NU Mart</li>
+            <li>Cafe & Eatery</li>
+            <li>Jasa Layanan</li>
+            <li>Usaha Produktif Lainnya</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-feather="pie-chart"></i>
+          </div>
+          <h3>SHU</h3>
+          <p>Pembagian Sisa Hasil Usaha setiap tahun</p>
+          <ul>
+            <li>Berdasarkan Simpanan</li>
+            <li>Berdasarkan Transaksi</li>
+            <li>Transparan & Adil</li>
+            <li>Dibagikan Rutin</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i data-feather="smartphone"></i>
+          </div>
+          <h3>Portal Online</h3>
+          <p>Akses informasi kapan saja, dimana saja</p>
+          <ul>
+            <li>Cek Saldo Online</li>
+            <li>Riwayat Transaksi</li>
+            <li>Laporan Keuangan</li>
+            <li>Info SHU</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="produk">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produk Simpanan</h2>
+        <p>Pilih Produk Simpanan yang Sesuai dengan Kebutuhan Anda</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-header">
+            <h3>Simpanan Pokok</h3>
+            <div class="product-badge">Wajib</div>
+          </div>
+          <div class="product-body">
+            <p class="product-desc">Simpanan yang dibayarkan sekali saat menjadi anggota</p>
+            <ul class="product-features">
+              <li><i data-feather="check"></i> Dibayar sekali</li>
+              <li><i data-feather="check"></i> Tidak dapat ditarik</li>
+              <li><i data-feather="check"></i> Sebagai modal koperasi</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-header">
+            <h3>Simpanan Wajib</h3>
+            <div class="product-badge">Wajib</div>
+          </div>
+          <div class="product-body">
+            <p class="product-desc">Simpanan yang dibayarkan rutin setiap bulan</p>
+            <ul class="product-features">
+              <li><i data-feather="check"></i> Dibayar rutin</li>
+              <li><i data-feather="check"></i> Jumlah tetap</li>
+              <li><i data-feather="check"></i> Dapat ditarik saat keluar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card featured">
+          <div class="product-header">
+            <h3>Simpanan Sukarela</h3>
+            <div class="product-badge popular">Populer</div>
+          </div>
+          <div class="product-body">
+            <p class="product-desc">Simpanan bebas yang dapat disetor dan ditarik kapan saja</p>
+            <ul class="product-features">
+              <li><i data-feather="check"></i> Fleksibel</li>
+              <li><i data-feather="check"></i> Dapat ditarik kapan saja</li>
+              <li><i data-feather="check"></i> Seperti tabungan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-header">
+            <h3>Simpanan Khusus</h3>
+            <div class="product-badge">Opsional</div>
+          </div>
+          <div class="product-body">
+            <p class="product-desc">Simpanan dengan tujuan tertentu</p>
+            <ul class="product-features">
+              <li><i data-feather="check"></i> Tujuan khusus</li>
+              <li><i data-feather="check"></i> Jangka waktu tertentu</li>
+              <li><i data-feather="check"></i> Sesuai kesepakatan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Siap Bergabung dengan Kami?</h2>
+        <p>Daftar sekarang dan nikmati berbagai keuntungan menjadi anggota Koperasi NU Vibes</p>
+        <a href="/register.html" class="btn btn-cta" onclick="console.log('CTA clicked'); return true;">
+          <i data-feather="user-plus"></i>
+          Daftar Sebagai Anggota
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publikasi Section -->
+  <section class="publikasi-section" id="publikasi">
+    <div class="container">
+      <!-- Artikel & Berita -->
+      <div class="section-header">
+        <h2>Artikel & Berita Terbaru</h2>
+        <p>Informasi dan update terkini dari Koperasi NU Vibes</p>
+      </div>
+      
+      <div class="artikel-grid" id="artikelGrid">
+        <div class="loading">Memuat artikel...</div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="/publikasi.html" class="btn btn-outline">Lihat Semua Artikel</a>
+      </div>
+
+      <!-- Galeri Komunitas -->
+      <div class="section-header" style="margin-top: 60px;">
+        <h2>Galeri Komunitas</h2>
+        <p>Dokumentasi kegiatan dan momen bersama</p>
+      </div>
+      
+      <div class="galeri-grid" id="galeriGrid">
+        <div class="loading">Memuat galeri...</div>
+      </div>
+      
+      <div class="section-footer">
+        <a href="/galeri.html" class="btn btn-outline">Lihat Semua Galeri</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="kontak">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hubungi Kami</h2>
+        <p>Kami Siap Melayani Anda</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i data-feather="map-pin"></i>
+            <div>
+              <h4>Alamat</h4>
+              <p id="alamatKoperasi">-</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i data-feather="phone"></i>
+            <div>
+              <h4>Telepon</h4>
+              <p id="telpKoperasi">-</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i data-feather="mail"></i>
+            <div>
+              <h4>Email</h4>
+              <p id="emailKoperasi">-</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i data-feather="clock"></i>
+            <div>
+              <h4>Jam Operasional</h4>
+              <p>Senin - Jumat: 08:00 - 16:00<br>Sabtu: 08:00 - 12:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Nomor Telepon" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>Koperasi NU Vibes</h4>
+          <p>Koperasi Warga Nahdliyyin yang Amanah, Profesional, dan Terpercaya</p>
+          <div class="social-links">
+            <a href="#" class="social-facebook" title="Facebook">
+              <i data-feather="facebook"></i>
+            </a>
+            <a href="#" class="social-instagram" title="Instagram">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" class="social-twitter" title="Twitter">
+              <i data-feather="twitter"></i>
+            </a>
+            <a href="#" class="social-linkedin" title="LinkedIn">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="social-youtube" title="YouTube">
+              <i data-feather="youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Link Cepat</h4>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#produk">Produk</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Layanan</h4>
+          <ul>
+            <li><a href="#produk">Simpanan</a></li>
+            <li><a href="#layanan">Unit Usaha</a></li>
+            <li><a href="#layanan">SHU</a></li>
+            <li><a href="/member.html">Portal Anggota</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul class="footer-contact">
+            <li class="contact-item">
+              <i data-feather="phone"></i>
+              <span id="footerTelp">-</span>
+            </li>
+            <li class="contact-item">
+              <i data-feather="mail"></i>
+              <span id="footerEmail">-</span>
+            </li>
+            <li class="contact-item">
+              <i data-feather="map-pin"></i>
+              <span id="footerAlamat">-</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Koperasi NU Vibes. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>

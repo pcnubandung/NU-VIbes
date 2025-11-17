@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Login - Koperasi NU Vibes</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .login-container {
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      max-width: 450px;
+      width: 100%;
+    }
+    
+    .login-header {
+      background: linear-gradient(135deg, #2E7D32, #4CAF50);
+      padding: 40px 32px;
+      text-align: center;
+      color: white;
+    }
+    
+    .logo-circle {
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      border: 3px solid white;
+    }
+    
+    .logo-text {
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFD700;
+    }
+    
+    .login-header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    
+    .login-header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    
+    .login-body {
+      padding: 40px 32px;
+    }
+    
+    .form-group {
+      margin-bottom: 24px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #2d3748;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+    .input-group {
+      position: relative;
+    }
+    
+    .input-group i {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a0aec0;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 14px 16px 14px 48px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 15px;
+      transition: all 0.3s;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #2E7D32;
+      box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+    }
+    
+    .btn-login {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, #2E7D32, #4CAF50);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .btn-login:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+    }
+    
+    .btn-login i {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .login-footer {
+      text-align: center;
+      padding: 24px 32px;
+      background: #f7fafc;
+      border-top: 1px solid #e2e8f0;
+    }
+    
+    .login-footer p {
+      color: #718096;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    
+    .login-footer a {
+      color: #2E7D32;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .error-message {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c33;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      display: none;
+    }
+    
+    .info-box {
+      background: #e6f7ff;
+      border: 1px solid #91d5ff;
+      color: #0050b3;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    
+    .info-box strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    
+    @media (max-width: 480px) {
+      .login-container {
+        border-radius: 16px;
+      }
+      
+      .login-header {
+        padding: 32px 24px;
+      }
+      
+      .login-body {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <img id="memberLoginLogo" src="" alt="Logo Koperasi" style="display: none; width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin: 0 auto 20px; display: block; border: 3px solid white;">
+      <div class="logo-circle" id="memberLoginLogoPlaceholder">
+        <span class="logo-text">NU</span>
+      </div>
+      <h1>NU Vibes</h1>
+      <p>Member Portal</p>
+    </div>
+    
+    <div class="login-body">
+      <div class="info-box">
+        <strong>ℹ️ Informasi Login</strong>
+        Username: Email Anda atau member[nomor_anggota]<br>
+        Password Default: <code>member123</code><br>
+        <small>Segera ganti password setelah login pertama!</small>
+      </div>
+      
+      <div class="error-message" id="errorMessage"></div>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label>Username / Email</label>
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" name="username" placeholder="email@example.com" required autofocus>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Password</label>
+          <div class="input-group">
+            <i data-feather="lock"></i>
+            <input type="password" name="password" placeholder="••••••••" required>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn-login">
+          <i data-feather="log-in"></i>
+          <span>Login</span>
+        </button>
+      </form>
+    </div>
+    
+    <div class="login-footer">
+      <p>Belum punya akun? Hubungi admin koperasi</p>
+      <a href="/login.html">Login sebagai Admin/Pengurus/Kasir</a>
+    </div>
+  </div>
+  
+  <script>
+    feather.replace();
+    
+    // Load logo koperasi
+    async function loadMemberLoginLogo() {
+      try {
+        const response = await fetch('/api/koperasi/logo');
+        const data = await response.json();
+        
+        if (data.logo) {
+          const memberLoginLogo = document.getElementById('memberLoginLogo');
+          const memberLoginLogoPlaceholder = document.getElementById('memberLoginLogoPlaceholder');
+          
+          memberLoginLogo.src = data.logo;
+          memberLoginLogo.style.display = 'block';
+          if (memberLoginLogoPlaceholder) memberLoginLogoPlaceholder.style.display = 'none';
+        }
+      } catch (error) {
+        console.error('Error loading logo:', error);
+      }
+    }
+    
+    loadMemberLoginLogo();
+    
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(e.target);
+      const username = formData.get('username');
+      const password = formData.get('password');
+      
+      const errorMessage = document.getElementById('errorMessage');
+      errorMessage.style.display = 'none';
+      
+      try {
+        const response = await fetch('/api/member/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, password })
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+          // Save token and user data
+          localStorage.setItem('token', result.token);
+          localStorage.setItem('user', JSON.stringify(result.user));
+          localStorage.setItem('memberData', JSON.stringify(result.anggota));
+          
+          // Redirect to member portal
+          window.location.href = '/member.html';
+        } else {
+          errorMessage.textContent = result.error || 'Login gagal';
+          errorMessage.style.display = 'block';
+        }
+      } catch (error) {
+        errorMessage.textContent = 'Terjadi kesalahan. Silakan coba lagi.';
+        errorMessage.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
+
