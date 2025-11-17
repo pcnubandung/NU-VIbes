@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Member API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .test-section {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .success { background: #d4edda; border-color: #c3e6cb; }
+    .error { background: #f8d7da; border-color: #f5c6cb; }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    pre {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Member API</h1>
+  
+  <div class="test-section">
+    <h3>1. Login Test</h3>
+    <button onclick="testLogin()">Test Login</button>
+    <div id="loginResult"></div>
+  </div>
+  
+  <div class="test-section">
+    <h3>2. Get Profile Test</h3>
+    <button onclick="testProfile()">Test Get Profile</button>
+    <div id="profileResult"></div>
+  </div>
+  
+  <div class="test-section">
+    <h3>3. Get Simpanan Test</h3>
+    <button onclick="testSimpanan()">Test Get Simpanan</button>
+    <div id="simpananResult"></div>
+  </div>
+  
+  <div class="test-section">
+    <h3>4. Get Partisipasi Test</h3>
+    <button onclick="testPartisipasi()">Test Get Partisipasi</button>
+    <div id="partisipasiResult"></div>
+  </div>
+
+  <script>
+    let token = localStorage.getItem('token');
+    
+    async function testLogin() {
+      const result = document.getElementById('loginResult');
+      result.innerHTML = '<p>Testing...</p>';
+      
+      try {
+        const response = await fetch('/api/member/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            username: 'memberNUV2025003',
+            password: 'member123'
+          })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          token = data.token;
+          localStorage.setItem('token', token);
+          localStorage.setItem('user', JSON.stringify(data.user));
+          result.className = 'test-section success';
+          result.innerHTML = `
+            <p><strong>✓ Login Success!</strong></p>
+            <pre>${JSON.stringify(data, null, 2)}</pre>
+          `;
+        } else {
+          result.className = 'test-section error';
+          result.innerHTML = `<p><strong>✗ Login Failed:</strong> ${data.error}</p>`;
+        }
+      } catch (error) {
+        result.className = 'test-section error';
+        result.innerHTML = `<p><strong>✗ Error:</strong> ${error.message}</p>`;
+      }
+    }
+    
+    async function testProfile() {
+      const result = document.getElementById('profileResult');
+      
+      if (!token) {
+        result.className = 'test-section error';
+        result.innerHTML = '<p>Please login first!</p>';
+        return;
+      }
+      
+      result.innerHTML = '<p>Testing...</p>';
+      
+      try {
+        const response = await fetch('/api/member/profile', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          result.className = 'test-section success';
+          result.innerHTML = `
+            <p><strong>✓ Profile Loaded!</strong></p>
+            <pre>${JSON.stringify(data, null, 2)}</pre>
+          `;
+        } else {
+          result.className = 'test-section error';
+          result.innerHTML = `<p><strong>✗ Failed:</strong> ${data.error}</p>`;
+        }
+      } catch (error) {
+        result.className = 'test-section error';
+        result.innerHTML = `<p><strong>✗ Error:</strong> ${error.message}</p>`;
+      }
+    }
+    
+    async function testSimpanan() {
+      const result = document.getElementById('simpananResult');
+      
+      if (!token) {
+        result.className = 'test-section error';
+        result.innerHTML = '<p>Please login first!</p>';
+        return;
+      }
+      
+      result.innerHTML = '<p>Testing...</p>';
+      
+      try {
+        const endpoints = [
+          '/api/simpanan/pokok',
+          '/api/simpanan/wajib',
+          '/api/simpanan/khusus',
+          '/api/simpanan/sukarela'
+        ];
+        
+        let html = '<p><strong>✓ Simpanan Data:</strong></p>';
+        
+        for (const endpoint of endpoints) {
+          const response = await fetch(endpoint, {
+            headers: {
+              'Authorization': `Bearer ${token}`
+            }
+          });
+          
+          const data = await response.json();
+          const name = endpoint.split('/').pop();
+          html += `<p>${name}: ${data.length} records</p>`;
+        }
+        
+        result.className = 'test-section success';
+        result.innerHTML = html;
+      } catch (error) {
+        result.className = 'test-section error';
+        result.innerHTML = `<p><strong>✗ Error:</strong> ${error.message}</p>`;
+      }
+    }
+    
+    async function testPartisipasi() {
+      const result = document.getElementById('partisipasiResult');
+      
+      if (!token) {
+        result.className = 'test-section error';
+        result.innerHTML = '<p>Please login first!</p>';
+        return;
+      }
+      
+      result.innerHTML = '<p>Testing...</p>';
+      
+      try {
+        const response = await fetch('/api/partisipasi', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          result.className = 'test-section success';
+          result.innerHTML = `
+            <p><strong>✓ Partisipasi Loaded!</strong></p>
+            <p>Total records: ${data.length}</p>
+            <pre>${JSON.stringify(data, null, 2)}</pre>
+          `;
+        } else {
+          result.className = 'test-section error';
+          result.innerHTML = `<p><strong>✗ Failed:</strong> ${data.error}</p>`;
+        }
+      } catch (error) {
+        result.className = 'test-section error';
+        result.innerHTML = `<p><strong>✗ Error:</strong> ${error.message}</p>`;
+      }
+    }
+    
+    // Auto-test if token exists
+    if (token) {
+      document.body.insertAdjacentHTML('afterbegin', '<div class="test-section success"><p>Token found in localStorage. You can test API calls.</p></div>');
+    } else {
+      document.body.insertAdjacentHTML('afterbegin', '<div class="test-section error"><p>No token found. Please login first.</p></div>');
+    }
+  </script>
+</body>
+</html>

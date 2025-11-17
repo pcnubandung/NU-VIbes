@@ -1,0 +1,57 @@
+================================================================================
+                    QUICK FIX - SQLITE ERROR
+================================================================================
+
+MASALAH: Error SQLITE_ERROR pada tabel unit_usaha
+
+SOLUSI CEPAT:
+-------------
+
+WINDOWS:
+1. Stop server (Ctrl+C)
+2. Double-click file: reset-database.bat
+3. Ketik Y dan Enter
+4. Jalankan: npm start
+5. Refresh browser (Ctrl+Shift+R)
+6. Login: admin / admin123
+
+MANUAL:
+1. Stop server (Ctrl+C)
+2. Hapus file: koperasi.db
+3. Jalankan: npm start
+4. Refresh browser (Ctrl+Shift+R)
+5. Login: admin / admin123
+
+COMMAND LINE:
+1. Stop server (Ctrl+C)
+2. Jalankan: npm run reset-db
+3. Jalankan: npm start
+4. Refresh browser (Ctrl+Shift+R)
+5. Login: admin / admin123
+
+================================================================================
+
+CATATAN PENTING:
+- Semua data akan hilang setelah reset
+- Database akan dibuat ulang dengan struktur yang benar
+- User admin default akan dibuat otomatis (admin/admin123)
+- Backup data penting sebelum reset jika diperlukan
+
+================================================================================
+
+VERIFIKASI SETELAH FIX:
+- Server berjalan tanpa error
+- Bisa login ke aplikasi
+- Menu Unit Usaha bisa dibuka
+- Form tambah unit usaha tampil lengkap dengan field baru:
+  * Jenis Usaha (Ritel/Kuliner/Jasa)
+  * Status (Aktif/Tidak Aktif)
+  * Tanggal Mulai
+  * Modal Awal (Rp)
+
+================================================================================
+
+Untuk panduan lengkap, baca file: FIX-SQLITE-ERROR.md
+
+© 2024 Koperasi NU Vibes
+================================================================================
